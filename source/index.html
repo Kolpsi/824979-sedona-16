@@ -8,7 +8,7 @@
     <header class="page-header">
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <button class="main-nav__toggle-close" type="button">Закрыть меню</button>
+        <button class="main-nav__close" type="button">Закрыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a >Главная</a></li>
           <li class="site-list__item"><a href="photo.html">фото и видео</a></li>
@@ -22,67 +22,88 @@
     </header>
     <main class="page-main">
       <section class="introduction">
-        <img class="introduction__image" src="http://placehold.it/150x100">
-        <h1 class="introduction__title">седона — небольшой городок в аризоне, заслуживающий большего!</h1>
-        <p class="introduction__paragraph">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <div class="introduction__wrapper">
+          <img class="introduction__image" src="http://placehold.it/150x100">
+          <h1 class="introduction__title">седона — небольшой городок в аризоне, заслуживающий большего!</h1>
+          <p class="introduction__paragraph">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
       </section>
       <section class="reason-one">
-        <div class="reason">
-          <h2 class="reason__title">настоящий городок</h2>
-          <p class="reason__number">&ndash; №1 &ndash;</p>
-          <p class="reason__text">седона не аттракцион для туристов, там течет своя жизнь</p>
+        <div class="reason-one__wrapper">
+          <div class="reason">
+            <h2 class="reason__title">настоящий городок</h2>
+            <p class="reason__number">&ndash; №1 &ndash;</p>
+            <p class="reason__text">седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <img class="reason-one__image" src="http://placehold.it/150x100" alt="настоящий городок">
+          <div class="reason__advantage">
+            <ul class="advantage__list">
+              <li class="advantage__item advantage__item--home">
+                <h3 class="advantage__title">жилье</h3>
+                <p class="advantage__description">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="advantage__item advantage__item--souvenirs">
+                <h3 class="advantage__title">сувениры</h3>
+                <p class="advantage__description">не только китайского, но и местного производства!</p>
+              </li>
+              <li class="advantage__item advantage__item--food">
+                <h3 class="advantage__title">еда</h3>
+                <p class="advantage__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <img class="reason-one__image" src="http://placehold.it/150x100" alt="настоящий городок">
-        <div class="reason__advantage">
-          <ul class="advantage__list">
-            <li class="advantage__item advantage__item--home">
-              <h3 class="advantage__title">жилье</h3>
-              <p class="advantage__description">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+      </section>
+      <section class="reason-two">
+        <div class="reason-two__wrapper">
+          <div class="reason">
+            <h2 class="reason__title">там есть мост дьявола</h2>
+            <p class="reason__number">&ndash; №2 &ndash;</p>
+            <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+          <img class="reason-two__image" src="http://placehold.it/150x100" alt="каньон">
+          <ul class="reason__list">
+            <li class="reason reason--other">
+              <h2 class="reason__title reason__title--other">небольшая площадь</h2>
+              <p class="reason__number reason__number--other">&ndash; №3 &ndash;</p>
+              <p class="reason__text reason__text--other">все интересные места находятся очень близко</p>
             </li>
-            <li class="advantage__item advantage__item--souvenirs">
-              <h3 class="advantage__title">сувениры</h3>
-              <p class="advantage__description">не только китайского, но и местного производства!</p>
+            <li class="reason reason--other">
+              <h2 class="reason__title reason__title--other">красивая дорога</h2>
+              <p class="reason__number reason__number--other">&ndash; №4 &ndash;</p>
+              <p class="reason__text reason__text--other">ехать в седону из лас-вегаса совсем не скучно!</p>
             </li>
-            <li class="advantage__item advantage__item--food">
-              <h3 class="advantage__title">еда</h3>
-              <p class="advantage__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <li class="reason reason--other">
+              <h2 class="reason__title reason__title--other">мало туристов</h2>
+              <p class="reason__number reason__number--other">&ndash; №5 &ndash;</p>
+              <p class="reason__text reason__text--other">Большинство едет в гранд каньон и толпится там</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="reason__two">
-        <div class="reason">
-          <h2 class="reason__title">там есть мост дьявола</h2>
-          <p class="reason__number">&ndash; №2 &ndash;</p>
-          <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-        </div>
-        <img class="reason-two__image" src="http://placehold.it/150x100" alt="каньон">
-        <ul class="reason__list">
-          <li class="reason reason--other">
-            <h2 class="reason__title reason__title--other">небольшая площадь</h2>
-            <p class="reason__number reason__number--other">&ndash; №3 &ndash;</p>
-            <p class="reason__text reason__text--other">все интересные места находятся очень близко</p>
-          </li>
-          <li class="reason reason--other">
-            <h2 class="reason__title reason__title--other">красивая дорога</h2>
-            <p class="reason__number reason__number--other">&ndash; №4 &ndash;</p>
-            <p class="reason__text reason__text--other">ехать в седону из лас-вегаса совсем не скучно!</p>
-          </li>
-          <li class="reason reason--other">
-            <h2 class="reason__title reason__title--other">мало туристов</h2>
-            <p class="reason__number reason__number--other">&ndash; №5 &ndash;</p>
-            <p class="reason__text reason__text--other">Большинство едет в гранд каньон и толпится там</p>
-          </li>
-        </ul>
-      </section>
       <article class="search-hotel">
-        <h2 class="search-hotel__title">заинтересовались?</h2>
-        <p class="search-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="search-hotel__button button">найти гостиницу</button>
+        <div class="search-hotel__wrapper">
+          <h2 class="search-hotel__title">заинтересовались?</h2>
+          <p class="search-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <button class="search-hotel__button button">найти гостиницу</button>
+        </div>
       </article>
       <article class="map">
         <img src="map__img" src="http://placehold.it/150x100" alt="Карта седоны">
       </article>
     </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <p class="page-footer__hashtag hashtag">#visitsedona</p>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item"><a class="social__link social__link--twitter" href="https://twitter.com/">мы в твиттере</a></li>
+            <li class="social__item"><a class="social__link social__link--facebook" href="https://www.facebook.com">мы в фейсбуке</a></li>
+            <li class="social__item"><a class="social__link social__link--youtube" href="https://www.youtube.com">мы в ютубе</a></li>
+          </ul>
+        </div>
+        <p class="page-footer__designed designed">разработанно</p>
+      </div>
+    </footer>
   </body>
 </html>
