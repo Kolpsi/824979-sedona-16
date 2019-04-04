@@ -22,30 +22,28 @@
     </header>
     <main class="page-main">
       <section class="introduction introduction--form">
-        <div class="introduction__wrapper">
-          <img class="introduction__image introduction__image--photo" src="http://placehold.it/150x100" alt="седона">
-          <h1 class="introduction__title">Оставьте свой отзыв</h1>
-          <p class="introduction__paragraph">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        </div>
+        <img class="introduction__image introduction__image--photo" src="http://placehold.it/150x100" alt="седона">
+        <h1 class="introduction__title">Оставьте свой отзыв</h1>
+        <p class="introduction__paragraph">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <section class="form">
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <h2 class="visually-hidden">Форма отзыва</h2>
           <fieldset class="personal-data">
             <legend class="personal-data__title">Представьтесь:</legend>
-            <input class="personal-data__field" type="text" name="name" id="name" placeholder="Петр">
             <label class="personal-data__label" for="name">имя*:</label>
-            <input class="personal-data__field" type="text" name="name" id="surname" placeholder="Иванов">
+            <input class="personal-data__field" type="text" name="name" id="name" placeholder="Петр">
             <label class="personal-data__label" for="surname">фамилия*:</label>
-            <input class="personal-data__field" type="text" name="name" id="patronymic" placeholder="Александрович">
+            <input class="personal-data__field" type="text" name="name" id="surname" placeholder="Иванов">
             <label class="personal-data__label" for="patronymic">отчество:</label>
+            <input class="personal-data__field" type="text" name="name" id="patronymic" placeholder="Александрович">
           </fieldset>
           <fieldset class="contact-information">
             <legend class="contact-information__title">Контактная информация:</legend>
-            <input class="contact-information__field" type="tel" name="tel" id="tel" placeholder="Введите телефон" pattern="[0-9]{11}" required>
             <label class="contact-information__label" for="tel">Контактный телефон*:</label>
-            <input class="contact-information__field" type="email" name="email" id="email" placeholder="Введите e-mail">
+            <input class="contact-information__field" type="tel" name="tel" id="tel" placeholder="Введите телефон" pattern="[0-9]{11}" required>
             <label class="contact-information__label" for="email">Электронная почта*:</label>
+            <input class="contact-information__field" type="email" name="email" id="email" placeholder="Введите e-mail">
           </fieldset>
           <fieldset class="respect">
             <legend class="respect__title">Ваше Общее впечатление:</legend>
@@ -93,17 +91,15 @@
         </form>
       </section>
       <footer class="page-footer">
-        <div class="page-footer__wrapper">
-          <p class="page-footer__hashtag hashtag">#visitsedona</p>
-          <div class="page-footer__social social">
-            <ul class="social__list">
-              <li class="social__item"><a class="social__link social__link--twitter" href="https://twitter.com/">мы в твиттере</a></li>
-              <li class="social__item"><a class="social__link social__link--facebook" href="https://www.facebook.com">мы в фейсбуке</a></li>
-              <li class="social__item"><a class="social__link social__link--youtube" href="https://www.youtube.com">мы в ютубе</a></li>
-            </ul>
-          </div>
-          <p class="page-footer__designed designed">разработанно</p>
+        <p class="page-footer__hashtag hashtag">#visitsedona</p>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item"><a class="social__link social__link--twitter" href="https://twitter.com/">мы в твиттере</a></li>
+            <li class="social__item"><a class="social__link social__link--facebook" href="https://www.facebook.com">мы в фейсбуке</a></li>
+            <li class="social__item"><a class="social__link social__link--youtube" href="https://www.youtube.com">мы в ютубе</a></li>
+          </ul>
         </div>
+        <p class="page-footer__designed designed">разработанно</p>
       </footer>
     </main>
   </body>

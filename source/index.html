@@ -8,25 +8,22 @@
     <header class="page-header">
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <button class="main-nav__close" type="button">Закрыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a >Главная</a></li>
           <li class="site-list__item"><a href="photo.html">фото и видео</a></li>
           <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
           <li class="site-list__item"><a href="#">HTML academy</a></li>
         </ul>
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Логотип седона">
+        <a class="page-header-logo">
+          <img class="page-header-logo__image" src="http://placehold.it/150x100" alt="Логотип седона">
         </a>
       </nav>
     </header>
     <main class="page-main">
       <section class="introduction">
-        <div class="introduction__wrapper">
-          <img class="introduction__image" src="http://placehold.it/150x100" alt="седона">
-          <h1 class="introduction__title">седона — небольшой городок в аризоне, заслуживающий большего!</h1>
-          <p class="introduction__paragraph">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </div>
+        <img class="introduction__image" src="http://placehold.it/150x100" alt="седона">
+        <h1 class="introduction__title">седона — небольшой городок в аризоне, заслуживающий большего!</h1>
+        <p class="introduction__paragraph">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section class="reason-one">
         <div class="reason-one__wrapper">
@@ -36,22 +33,22 @@
             <p class="reason__text">седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <img class="reason-one__image" src="http://placehold.it/150x100" alt="настоящий городок">
-          <div class="reason__advantage">
-            <ul class="advantage__list">
-              <li class="advantage__item advantage__item--home">
-                <h3 class="advantage__title">жилье</h3>
-                <p class="advantage__description">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
+        <div class="reason-one__advantage">
+          <ul class="reason-one__list">
+            <li class="reason-one__item reason-one__item--home">
+              <h3 class="reason-one__title">жилье</h3>
+              <p class="reason-one__description">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="advantage__item advantage__item--souvenirs">
-                <h3 class="advantage__title">сувениры</h3>
-                <p class="advantage__description">не только китайского, но и местного производства!</p>
-              </li>
-              <li class="advantage__item advantage__item--food">
-                <h3 class="advantage__title">еда</h3>
-                <p class="advantage__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-              </li>
-            </ul>
-          </div>
+            <li class="reason-one__item reason-one__item--souvenirs">
+             <h3 class="reason-one__title">сувениры</h3>
+             <p class="reason-one__description">не только китайского, но и местного производства!</p>
+            </li>
+            <li class="reason-one__item reason-one__item--food">
+                <h3 class="reason-one__title">еда</h3>
+                <p class="reason-one__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="reason-two">
@@ -62,7 +59,7 @@
             <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
           <img class="reason-two__image" src="http://placehold.it/150x100" alt="каньон">
-          <ul class="reason__list">
+          <ul class="reason-two__list">
             <li class="reason reason--other">
               <h2 class="reason__title reason__title--other">небольшая площадь</h2>
               <p class="reason__number reason__number--other">&ndash; №3 &ndash;</p>
@@ -82,11 +79,9 @@
         </div>
       </section>
       <article class="search-hotel">
-        <div class="search-hotel__wrapper">
-          <h2 class="search-hotel__title">заинтересовались?</h2>
-          <p class="search-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button class="search-hotel__button button">найти гостиницу</button>
-        </div>
+        <h2 class="search-hotel__title">заинтересовались?</h2>
+        <p class="search-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a class="search-hotel__button button" href="#">найти гостиницу</a>
       </article>
       <article class="map">
         <h2 class="visually-hidden">Карта седоны</h2>
@@ -94,17 +89,15 @@
       </article>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <p class="page-footer__hashtag hashtag">#visitsedona</p>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item"><a class="social__link social__link--twitter" href="https://twitter.com/">мы в твиттере</a></li>
-            <li class="social__item"><a class="social__link social__link--facebook" href="https://www.facebook.com">мы в фейсбуке</a></li>
-            <li class="social__item"><a class="social__link social__link--youtube" href="https://www.youtube.com">мы в ютубе</a></li>
-          </ul>
-        </div>
-        <p class="page-footer__designed designed">разработанно</p>
+      <p class="page-footer__hashtag hashtag">#visitsedona</p>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link social__link--twitter" href="https://twitter.com/">мы в твиттере</a></li>
+          <li class="social__item"><a class="social__link social__link--facebook" href="https://www.facebook.com">мы в фейсбуке</a></li>
+          <li class="social__item"><a class="social__link social__link--youtube" href="https://www.youtube.com">мы в ютубе</a></li>
+        </ul>
       </div>
+      <p class="page-footer__designed designed">разработанно</p>
     </footer>
   </body>
 </html>
