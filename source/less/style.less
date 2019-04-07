@@ -1,18 +1,3 @@
-@font-face {
-  font-family: "PT sans", "Arial", "sans-serif";
-  src:url("../fonts/ptsans.woff2") format("woff2");
-  src:url("../fonts/ptsans.woff1") format("woff1");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "PT sans", "Arial", "sans-serif";
-  src:url("../fonts/ptsansbold.woff2") format("woff2");
-  src:url("../fonts/ptsansbold.woff1") format("woff1");
-  font-weight: bold;
-  font-style: normal;
-}
-
 @import "normalize.less";
 @import "blocks/site-list.less";
 @import "blocks/introduction.less";
@@ -24,11 +9,36 @@
 @import "blocks/designed.less";
 @import "blocks/photo-list.less";
 @import "blocks/question.less";
+@import "blocks/mixins.less";
+@import "blocks/personal-data.less";
+@import "blocks/contact-information.less";
+@import "blocks/respect.less";
+@import "blocks/visited.less";
+@import "blocks/emotions.less";
+
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "PT sans", "Arial", "sans-serif";
+
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  src: url("../fonts/ptsans.woff1") format("woff1");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: bold;
+  font-family: "PT sans", "Arial", "sans-serif";
+
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  src: url("../fonts/ptsansbold.woff1") format("woff1");
+}
 
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
+
 .button {
   box-sizing: border-box;
   width: 280px;
@@ -38,14 +48,13 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-  text-decoration: none;
 
   background-color: #81b3d2;
 }
 
 .hashtag {
-  font-family: PTSans;
-  font-size: 21px;
   font-weight: bold;
+  font-size: 21px;
   line-height: 26px;
+  font-family: PTSans;
 }
