@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>Седона</title>
   </head>
   <body>
@@ -9,10 +10,10 @@
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a >Главная</a></li>
-          <li class="site-list__item"><a href="photo.html">фото и видео</a></li>
-          <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
-          <li class="site-list__item"><a href="#">HTML academy</a></li>
+          <li class="site-list__item"><a class="site-list__link" >Главная</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="photo.html">фото и видео</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="form.html">Форма отзыва</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">HTML academy</a></li>
         </ul>
         <a class="page-header-logo">
           <img class="page-header-logo__image" src="http://placehold.it/150x100" alt="Логотип седона">
@@ -21,18 +22,18 @@
     </header>
     <main class="page-main">
       <section class="introduction">
-        <img class="introduction__image" src="http://placehold.it/150x100" alt="седона">
+        <div class="introduction__image"></div>
         <h1 class="introduction__title">седона — небольшой городок в аризоне, заслуживающий большего!</h1>
         <p class="introduction__paragraph">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section class="reason-one">
         <div class="reason-one__wrapper">
-          <div class="reason">
+          <div class="reason reason--triangle">
             <h2 class="reason__title">настоящий городок</h2>
             <p class="reason__number">&ndash; №1 &ndash;</p>
             <p class="reason__text">седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img class="reason-one__image" src="http://placehold.it/150x100" alt="настоящий городок">
+          <img class="reason-one__image" src="img/main-city-mobile@1x.jpg" alt="настоящий городок" width="320" height="360">
         </div>
         <div class="reason-one__advantage">
           <ul class="reason-one__list">
@@ -54,11 +55,11 @@
       <section class="reason-two">
         <div class="reason-two__wrapper">
           <div class="reason">
-            <h2 class="reason__title">там есть мост дьявола</h2>
+            <h2 class="reason__title reason__title--belial">там есть мост дьявола</h2>
             <p class="reason__number">&ndash; №2 &ndash;</p>
             <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <img class="reason-two__image" src="http://placehold.it/150x100" alt="каньон">
+          <img class="reason-two__image" src="img/photo-bridge-mobile@1x.jpg" alt="каньон" width="320" height="360">
           <ul class="reason-two__list">
             <li class="reason reason--other">
               <h2 class="reason__title reason__title--other">небольшая площадь</h2>
@@ -85,7 +86,7 @@
       </article>
       <article class="map">
         <h2 class="visually-hidden">Карта седоны</h2>
-        <img class="map__img" src="http://placehold.it/150x100" alt="Карта седоны">
+        <img class="map__img" src="img/bg-map-mobile@1x.jpg" alt="Карта седоны" width="320" height="350">
       </article>
     </main>
     <footer class="page-footer">
