@@ -15,46 +15,7 @@
 @import "blocks/respect.less";
 @import "blocks/visited.less";
 @import "blocks/emotions.less";
-
-@font-face {
-  font-style: normal;
-  font-weight: normal;
-  font-family: "PT sans", "Arial", sans-serif;
-
-  src: url("../fonts/ptsans.woff2") format("woff2");
-  src: url("../fonts/ptsans.woff1") format("woff1");
-}
-
-@font-face {
-  font-style: normal;
-  font-weight: bold;
-  font-family: "PT sans", "Arial", sans-serif;
-
-  src: url("../fonts/ptsansbold.woff2") format("woff2");
-  src: url("../fonts/ptsansbold.woff1") format("woff1");
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.button {
-  box-sizing: border-box;
-  width: 280px;
-  padding: 17px 47px;
-
-  font-family: "PT sans", "Arial", sans-serif;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  background-color: #81b3d2;
-}
-
-.hashtag {
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  font-family: "PT sans", "Arial", sans-serif;
-}
+@import "blocks/fonts.less";
+@import "blocks/common.less";
+@import "blocks/button.less";
+@import "blocks/hashtag.less";
