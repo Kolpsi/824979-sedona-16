@@ -1,10 +1,9 @@
 .reason {
-  width: 265px;
-  margin: 0 auto;
+  width: auto;
+  margin: 0 0;
 
   font-weight: normal;
   font-family: "PT sans", "Arial", sans-serif;
-
   text-transform: uppercase;
 
   background-color: #81b3d2;
@@ -62,4 +61,30 @@
 
 .reason__text {
   padding-bottom: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .reason {
+    width: 375px;
+  }
+  .reason__text,
+  .reason__title {
+    width: 162px;
+  }
+  .reason__text {
+    padding-bottom: 29px;
+  }
+  .reason--triangle {
+    background-image: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reason {
+    width: 540px;
+  }
+  .reason__text,
+  .reason__title {
+    width: 265px;
+  }
 }

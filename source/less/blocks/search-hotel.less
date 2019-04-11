@@ -1,4 +1,7 @@
 .search-hotel {
+  display: flex;
+  flex-direction: column;
+  width: auto;
   padding-bottom: 50px;
 
   font-family: "PT sans", "Arial", sans-serif;
@@ -15,8 +18,19 @@
 
 .search-hotel__text {
   width: 262px;
+  margin: 0 auto ;
 
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+}
+
+.search-hotel__button {
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .search-hotel__text {
+    width: 434px;
+  }
 }

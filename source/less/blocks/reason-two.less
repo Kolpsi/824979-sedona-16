@@ -1,0 +1,32 @@
+.reason-two__image {
+  width: 100%;
+  height: 260px;
+  margin-bottom: 40px;
+
+  background: url("../img/main-bridge-mobile@1x.jpg") center no-repeat;
+  background-color: #81b3d2;
+  background-size: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .reason-two__wrapper {
+    display: flex;
+  }
+  .reason-two__image {
+    order: -1;
+    margin: 0;
+
+    background: url("../img/main-bridge-tablet@1x.jpg") center no-repeat;
+    background-size: 100%;
+  }
+  .reason-two__list {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reason-two__image {
+    background: url("../img/main-bridge-desktop@1x.jpg") center no-repeat;
+    background-size: 100%;
+  }
+}
