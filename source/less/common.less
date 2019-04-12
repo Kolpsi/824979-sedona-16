@@ -1,12 +1,23 @@
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
 body {
   margin: 0;
   padding: 0;
 }
 
-@tablet-width: 768px;
-@desktop-width: 1200px;
+.page-wrapper {
+  width: 320px;
+}
 
-ul {
-  margin: 0;
-  padding: 0;
+@media (min-width: @tablet-width) {
+  .page-wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-wrapper {
+    width: 1200px;
+  }
 }
