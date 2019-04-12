@@ -41,3 +41,25 @@
   font-family: "PT sans", "Arial", sans-serif;
   color: #000000;
 }
+
+@media (min-width: @tablet-width) {
+  .photo-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo-list__item {
+    width: 324px;
+    min-height: 350px;
+  }
+
+  .photo-list__item:nth-child(1) {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-list__item {
+    width: 400px;
+  }
+}

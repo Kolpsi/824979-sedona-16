@@ -12,10 +12,40 @@
   text-align: center;
 
   background-color: #81b3d2;
+
+  &--order {
+    order: 1;
+  }
+}
+
+.site-list__item:nth-child(3) {
+  order: 2;
+}
+
+.site-list__item:nth-child(4) {
+  order: 2;
 }
 
 .site-list__link {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+
+  cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+  }
+
+  .site-list__item {
+    background-color: #ffffff;
+  }
+
+  .site-list__link {
+    color: #000000;
+  }
 }
