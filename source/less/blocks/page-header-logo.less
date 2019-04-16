@@ -1,0 +1,29 @@
+@media (max-width: @mobile-width-only) {
+  .page-header-logo__image {
+    &--desktop,
+    &--tablet {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header-logo__image {
+    &--desktop,
+    &--mobile {
+      display: none;
+    }
+  }
+}
+
+@media  (min-width: @desktop-width) {
+  .page-header-logo__image {
+    &--tablet,
+    &--mobile {
+      display: none;
+    }
+    &--desktop {
+      display: inline-block;
+    }
+  }
+}
