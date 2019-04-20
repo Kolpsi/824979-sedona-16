@@ -11,6 +11,8 @@
 }
 
 .reason-one__list {
+  position: relative;
+
   margin: 0;
   padding: 0;
 
@@ -21,6 +23,18 @@
 .reason-one__item {
   width: 210px;
   padding-bottom: 40px;
+  padding-left: 70px;
+  &--home {
+    order: 1;
+  }
+
+  &--souvenirs {
+    order: 2;
+  }
+
+  &--food {
+    order: 3;
+  }
 }
 
 .reason-one__title {
@@ -37,6 +51,44 @@
   color: #333333;
 }
 
+.reason-one__item--home:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 10px;
+
+  width: 45px;
+  height: 45px;
+
+  background: url("../img/icon-house.svg") center no-repeat;
+  background-size: contain;
+}
+
+.reason-one__item--souvenirs:before {
+  content: "";
+  position: absolute;
+  top: 165px;
+  left: 10px;
+
+  width: 40px;
+  height: 40px;
+
+  background: url("../img/icon-gift.svg") center no-repeat;
+  background-size: contain;
+}
+
+.reason-one__item--food:before {
+  content: "";
+  position: absolute;
+  top: 330px;
+  left: 6px;
+
+  width: 40px;
+  height: 40px;
+
+  background: url("../img/icon-burger.svg") center no-repeat;
+  background-size: contain;
+}
 
 @media (min-width: @tablet-width) {
   .reason-one__wrapper {
@@ -46,6 +98,7 @@
   .reason-one__image {
     width: 100%;
     margin: 0;
+    padding-left: 0;
 
     background: url("../img/main-city-tablet@1x.jpg") center no-repeat;
     background-size: cover;
@@ -53,7 +106,53 @@
 
   .reason-one__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+
+  .reason-one__title {
+    font-size: 21px;
+  }
+
+  .reason-one__item {
+    padding-top: 165px;
+
+    text-align: center;
+    &--food {
+      order: 1;
+      width: 155px;
+    }
+
+    &--souvenirs {
+      width: 165px;
+    }
+
+    &--home {
+      width: 160px;
+    }
+  }
+
+  .reason-one__item--home:before {
+    top: 80px;
+    left: 120px;
+
+    width: 75px;
+    height: 72px;
+  }
+
+  .reason-one__item--souvenirs:before {
+    top: 80px;
+    left: 640px;
+
+    width: 64px;
+    height: 75px;
+  }
+
+  .reason-one__item--food:before {
+    top: 80px;
+    left: 375px;
+
+    width: 77px;
+    height: 68px;
   }
 }
 
@@ -63,5 +162,34 @@
 
     background: url("../img/main-city-desktop@1x.jpg") center no-repeat;
     background-size: cover;
+  }
+
+  .reason-one__item {
+    &--food {
+      width: 285px;
+    }
+
+    &--souvenirs {
+      width: 215px;
+    }
+
+    &--home {
+      width: 255px;
+    }
+  }
+
+  .reason-one__item--home:before {
+    top: 80px;
+    left: 200px;
+  }
+
+  .reason-one__item--souvenirs:before {
+    top: 80px;
+    left: 1020px;
+  }
+
+  .reason-one__item--food:before {
+    top: 80px;
+    left: 615px;
   }
 }
