@@ -35,10 +35,33 @@
   border: none;
 }
 
-.form__button {
-  margin-left: 5px;
+.emotions__required {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
+  .emotions {
+    border-top: 1px solid #e6e6e6;
+  }
 
+  .emotions__title {
+    margin-bottom: 35px;
+
+    border: none;
+  }
+
+  .emotions__feedback {
+    width: 648px;
+  }
+
+  .emotions__required {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 162px;
+    margin: 0;
+    margin-left: 155px;
+    padding: 0;
+
+    font-size: 14px;
+  }
 }
