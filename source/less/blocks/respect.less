@@ -45,7 +45,21 @@
     border-radius: 50%;
   }
 }
+// активные стили общих впечатлений
+.respect__label:hover:before {
+  background-color: #e5e5e5;
+}
 
+.respect__label:active:before {
+  background-color: #d5d5d5;
+}
+
+.respect__checkbox:active:checked + .respect__label {
+  &:after {
+    opacity: 0.3;
+  }
+}
+//
 .respect__checkbox {
   position: absolute;
 }
