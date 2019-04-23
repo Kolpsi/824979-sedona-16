@@ -2,6 +2,9 @@
   border: none;
 }
 
+.respect__item {
+  margin-bottom: 50px;
+}
 
 .respect__list {
   margin: 0;
@@ -11,12 +14,54 @@
 }
 
 .respect__title {
+  width: 320px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
   text-transform: uppercase;
 
-  .title-form;
+  border-top: 1px solid #e6e6e6;
+
+  .title-form();
 }
 
 .respect__label {
+  position: relative;
 
-  .title-form;
+  padding-left: 98px;
+
+  .title-form();
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: #f2f2f2;
+
+    border-radius: 50%;
+  }
+}
+
+.respect__checkbox {
+  position: absolute;
+}
+
+.respect__checkbox:checked + .respect__label {
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 40px;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: #333333;
+    border-radius: 50%;
+  }
 }
