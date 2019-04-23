@@ -43,14 +43,14 @@
               <input class="personal-data__field" type="text" name="name" id="name" placeholder="Петр">
               <label class="personal-data__label" for="surname">фамилия*:</label>
               <input class="personal-data__field" type="text" name="name" id="surname" placeholder="Иванов">
-              <label class="personal-data__label" for="patronymic">отчество:</label>
+              <label class="personal-data__label" for="patronymic">отчество: </label>
               <input class="personal-data__field" type="text" name="name" id="patronymic" placeholder="Александрович">
             </fieldset>
             <fieldset class="contact-information">
               <legend class="contact-information__title">Контактная информация:</legend>
-              <label class="contact-information__label" for="tel">Контактный телефон*:</label>
+              <label class="contact-information__label contact-information__label--tel" for="tel">Контактный телефон*:</label>
               <input class="contact-information__field" type="tel" name="tel" id="tel" placeholder="Введите телефон" pattern="[0-9]{11}" required>
-              <label class="contact-information__label" for="email">Электронная почта*:</label>
+              <label class="contact-information__label contact-information__label--mail" for="email">Электронная почта*:</label>
               <input class="contact-information__field" type="email" name="email" id="email" placeholder="Введите e-mail">
             </fieldset>
             <fieldset class="respect">
@@ -102,9 +102,21 @@
           <p class="page-footer__hashtag hashtag">#visitsedona</p>
           <div class="page-footer__social social">
             <ul class="social__list">
-              <li class="social__item"><a class="social__link social__link--twitter" href="https://twitter.com/">мы в твиттере</a></li>
-              <li class="social__item"><a class="social__link social__link--facebook" href="https://www.facebook.com">мы в фейсбуке</a></li>
-              <li class="social__item"><a class="social__link social__link--youtube" href="https://www.youtube.com">мы в ютубе</a></li>
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="https://twitter.com/">
+                  <span class="visually-hidden">мы в твиттере</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com">
+                  <span class="visually-hidden">мы в фейсбуке</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com">
+                  <span class="visually-hidden">мы в ютубе</span>
+                </a>
+              </li>
             </ul>
           </div>
           <p class="page-footer__designed designed">разработанно
