@@ -1,4 +1,6 @@
 .personal-data {
+  position: relative;
+
   text-transform: uppercase;
 
   border: none;
@@ -12,11 +14,16 @@
 
   background-color: #f2f2f2;
   border: none;
+
+  &:nth-of-type(1) {
+    width: 230px;
+  }
+
+  &:nth-of-type(3) {
+    margin-left: 5px;
+  }
 }
 
-.personal-data input:nth-of-type(1) {
-  width: 230px;
-}
 
 .personal-data__title {
   width: 320px;
@@ -44,11 +51,35 @@
 
 @media (min-width: @tablet-width) {
   .personal-data {
-    width: 380px;
+    width: 340px;
     padding: 0;
+    &:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -50px;
+
+    width: 1px;
+    height: 292px;
+
+    background-color: #f2f2f2;
+    }
   }
   .personal-data__title {
-    border: none;
     text-align: left;
+
+    border: none;
+  }
+
+  .personal-data__label {
+    text-align: left;
+  }
+
+  .personal-data input {
+    width: 178px;
+
+    &:nth-of-type(1) {
+      width: 216px;
+    }
   }
 }

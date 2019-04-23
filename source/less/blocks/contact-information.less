@@ -30,9 +30,6 @@
     background: url("../img/icon-phone.svg") center no-repeat;
     background-color: #e6e6e6;
   }
-}
-
-.contact-information__label {
   &--mail:after {
     content: "";
     position: absolute;
@@ -74,9 +71,28 @@
 
 @media  (min-width: @tablet-width) {
   .contact-information {
-    width: 380px;
+    margin: 0 auto;
+    width: 648px;
     padding: 0;
+    border-top: 1px solid #e6e6e6;
   }
+
+  .contact-information input {
+    width: 640px;
+  }
+
+  .contact-information__label {
+    &--tel:before {
+      top: 112px;
+      right: 9px;
+    }
+
+    &--mail:after {
+      top: 233px;
+      right: 9px;
+    }
+  }
+
   .contact-information__title {
     border: none;
   }
