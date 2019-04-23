@@ -67,17 +67,28 @@
 
 @media (min-width: @tablet-width) {
   .respect {
-    width: 273px;
-    padding: 0;
-    margin: 0;
     order: -1;
+    width: 273px;
+    margin: 0;
+    padding: 0;
   }
 
   .respect__title {
-    padding-bottom: 70px;
-    font-size: 21px;
     padding-right: 25px;
+    padding-bottom: 70px;
+
+    font-size: 21px;
 
     border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .respect {
+    width: 400px;
+  }
+
+  .respect__title {
+    margin-left: 170px;
   }
 }

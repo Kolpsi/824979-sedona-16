@@ -6,6 +6,11 @@
   border: none;
 }
 
+.contact-information__hidden {
+  margin: 0;
+  padding: 0;
+}
+
 .contact-information input {
   box-sizing: border-box;
   width: 280px;
@@ -96,5 +101,35 @@
 
   .contact-information__title {
     border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-information {
+    width: 960px;
+  }
+
+  .contact-information input {
+    width: 257px;
+    margin-left: 15px;
+  }
+
+  .contact-information__label {
+    padding-left: 0;
+    &--mail {
+      margin-left: 130px;
+      &:after {
+        top: 86px;
+        right: 0;
+      }
+    }
+    &--tel:before {
+      top: 86px;
+      left: 320px;
+    }
+  }
+
+  .contact-information__hidden {
+    display: none;
   }
 }

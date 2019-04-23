@@ -87,3 +87,19 @@
     }
   }
 }
+
+@media (min-width: @desktop-width) {
+  .personal-data {
+    width: 405px;
+    &:before {
+      left: -80px;
+    }
+  }
+
+  .personal-data input {
+    width: 312px;
+    &:nth-of-type(1) {
+      width: 350px;
+    }
+  }
+}

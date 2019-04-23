@@ -73,8 +73,9 @@
   }
 
   .visited__title {
-    border: none;
     font-size: 21px;
+
+    border: none;
   }
 
   .visited__list {
@@ -92,5 +93,27 @@
     &:nth-child(3) {
       margin-right: 90px;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .visited {
+    width: 960px;
+  }
+
+  .visited__list {
+    width: 960px;
+  }
+
+  .visited .visited__item {
+    margin-right: 60px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .visited__label {
+    padding-left: 85px;
   }
 }
