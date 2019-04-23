@@ -64,3 +64,32 @@
   background-color: #f2f2f2;
   border-radius: 3px;
 }
+
+@media (min-width: @tablet-width) {
+  .visited {
+    width: 648px;
+
+    border-top: 1px solid #e6e6e6;
+  }
+
+  .visited__title {
+    border: none;
+  }
+
+  .visited__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 520px;
+    margin: 0 auto;
+  }
+
+  .visited__item {
+    &:nth-child(1) {
+      margin-right: 70px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 90px;
+    }
+  }
+}
