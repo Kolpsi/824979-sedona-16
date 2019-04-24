@@ -102,6 +102,10 @@
     display: flex;
   }
 
+  .reason-one__advantage {
+    margin-bottom: 28px;
+  }
+
   .reason-one__image {
     width: 100%;
     margin: 0;
@@ -117,11 +121,14 @@
   }
 
   .reason-one__title {
+    margin-bottom: 25px;
+
     font-size: 21px;
   }
 
   .reason-one__item {
-    padding-top: 165px;
+    padding-top: 158px;
+    padding-left: 0;
 
     text-align: center;
 
@@ -140,24 +147,24 @@
   }
 
   .reason-one__item--home::before {
-    top: 80px;
-    left: 120px;
+    top: 60px;
+    left: 90px;
 
     width: 75px;
     height: 72px;
   }
 
   .reason-one__item--souvenirs::before {
-    top: 80px;
-    left: 640px;
+    top: 59px;
+    left: 608px;
 
     width: 64px;
     height: 75px;
   }
 
   .reason-one__item--food::before {
-    top: 80px;
-    left: 375px;
+    top: 60px;
+    left: 345px;
 
     width: 77px;
     height: 68px;
@@ -166,19 +173,24 @@
 
 @media (min-width: @desktop-width) {
   .reason-one__image {
-    width: 100%;
+    width: 800px;
 
     background: url("../img/main-city-desktop@1x.jpg") center no-repeat;
-    background-size: cover;
+  }
+
+  .reason-one__advantage {
+    margin-bottom: 48px;
   }
 
   .reason-one__item {
     &--food {
       width: 285px;
+      margin-right: 10px;
     }
 
     &--souvenirs {
       width: 215px;
+      margin-right: 20px;
     }
 
     &--home {
@@ -187,17 +199,17 @@
   }
 
   .reason-one__item--home::before {
-    top: 80px;
-    left: 200px;
+    top: 60px;
+    left: 160px;
   }
 
   .reason-one__item--souvenirs::before {
-    top: 80px;
-    left: 1020px;
+    top: 58px;
+    left: 968px;
   }
 
   .reason-one__item--food::before {
-    top: 80px;
-    left: 615px;
+    top: 62px;
+    left: 560px;
   }
 }

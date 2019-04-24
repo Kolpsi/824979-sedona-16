@@ -108,17 +108,37 @@
 
 @media (min-width: @tablet-width) {
   .reason {
-    width: 375px;
+    width: 256px;
+
+    border: none;
   }
 
   .reason__title {
     width: 162px;
+    padding-top: 45px;
 
     font-size: 21px;
 
     &--other {
       width: 130px;
+      padding-left: 60px;
     }
+
+    &--belial {
+      width: 156px;
+    }
+
+    &--road {
+      padding-top: 33px;
+    }
+
+    &--tourist {
+      padding-top: 37px;
+    }
+  }
+
+  .reason__number {
+    padding-bottom: 20px;
   }
 
   .reason__text {
@@ -142,6 +162,10 @@
     }
   }
 
+  .reason_picture {
+    height: 256px;
+  }
+
   .reason--triangle {
     background-image: none;
   }
@@ -149,19 +173,30 @@
 
 @media (min-width: @desktop-width) {
   .reason {
-    width: 540px;
+    width: 400px;
   }
 
   .reason__title {
-    width: 265px;
+    width: 165px;
+    padding-top: 50px;
 
     &--belial {
-      width: 151px;
+      width: 156px;
+      padding-top: 52px;
     }
-  }
 
-  .reason__text--belial {
-    width: 215px;
+    &--other {
+      padding-top: 45px;
+      padding-left: 135px;
+    }
+
+    &--road {
+      padding-top: 35px;
+    }
+
+    &--tourist {
+      padding-top: 37px;
+    }
   }
 
   .reason__title--other {
@@ -170,7 +205,7 @@
 
   .reason__text {
     width: 265px;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
 
     &--place {
       width: 285px;
@@ -182,6 +217,10 @@
 
     &--tourist {
       width: 260px;
+    }
+
+    &--belial {
+      width: 215px;
     }
   }
 }
