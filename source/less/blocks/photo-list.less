@@ -95,11 +95,16 @@
     width: 648px;
   }
 
+  .photo-list__link {
+    margin-bottom: 10px;
+  }
+
   .photo-list__item {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 324px;
+    padding-top: 18px;
 
     background-color: #f2f2f2;
     border: none;
@@ -134,16 +139,22 @@
 
   .photo-list__item--first .photo-list__like {
     margin: 0;
-    margin-right: 20px;
+    margin-right: 15px;
 
     &::after {
-      top: 10px;
+      top: 12px;
+      left: 5px;
     }
   }
 
   .photo-list__like {
+    margin-top: 13px;
+    margin-right: 27px;
+    margin-bottom: 25px;
+
     &::after {
-      top: 10px;
+      top: 0px;
+      left: 5px;
     }
   }
 
