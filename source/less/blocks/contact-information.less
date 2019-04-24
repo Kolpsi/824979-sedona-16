@@ -14,8 +14,8 @@
 .contact-information input {
   box-sizing: border-box;
   width: 280px;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin-top: 8px;
+  margin-bottom: 9px;
   padding: 22px 0 20px 22px;
 
   background-color: #f2f2f2;
@@ -41,10 +41,10 @@
   &--tel::before {
     content: "";
     position: absolute;
-    top: 119px;
-    right: 53px;
+    top: 96px;
+    right: 47px;
 
-    width: 58px;
+    width: 57px;
     height: 58px;
 
     background: url("../img/icon-phone.svg") center no-repeat;
@@ -54,10 +54,10 @@
   &--mail::after {
     content: "";
     position: absolute;
-    top: 240px;
-    right: 53px;
+    top: 198px;
+    right: 47px;
 
-    width: 58px;
+    width: 57px;
     height: 58px;
 
     background: url("../img/icon-mail.svg") center no-repeat;
@@ -67,8 +67,9 @@
 
 .contact-information__title {
   width: 320px;
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding-top: 13px;
+  padding-right: 30px;
+  padding-bottom: 15px;
 
   border-top: 1px solid #e6e6e6;
 
@@ -81,6 +82,10 @@
   line-height: 26px;
   text-align: left;
   color: #000000;
+}
+
+.contact-information__field:last-child {
+  margin-bottom: 15px;
 }
 
 @media (min-width: @tablet-width) {
