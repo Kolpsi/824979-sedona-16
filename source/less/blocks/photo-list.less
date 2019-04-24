@@ -12,6 +12,7 @@
   padding-top: 22px;
 
   border-top: 1px solid #d3d3d3;
+
   &:nth-child(4) {
     border-bottom: 1px solid #d3d3d3;
   }
@@ -65,7 +66,8 @@
 
   background: none;
   border: none;
-  &:after {
+
+  &::after {
     content: "";
     position: absolute;
     top: 0;
@@ -101,6 +103,7 @@
 
     background-color: #f2f2f2;
     border: none;
+
     &:nth-child(4) {
       padding: 0;
 
@@ -116,6 +119,7 @@
   .photo-list__image {
     width: 324px;
     height: 267px;
+
     &--first {
       width: 648px;
       height: 400px;
@@ -131,17 +135,19 @@
   .photo-list__item--first .photo-list__like {
     margin: 0;
     margin-right: 20px;
-    &:after {
-      top: 10px;
-    }
-  }
-  .photo-list__like {
-    &:after {
+
+    &::after {
       top: 10px;
     }
   }
 
-  .photo-list
+  .photo-list__like {
+    &::after {
+      top: 10px;
+    }
+  }
+
+  .photo-list,
   .photo-list__title {
     margin-top: 0;
   }
@@ -175,7 +181,7 @@
   }
 
   .photo-list__item--first .photo-list__like {
-    &:after {
+    &::after {
       top: 30px;
     }
   }
@@ -211,7 +217,8 @@
     padding-right: 20px;
 
     color: #ffffff;
-    &:after {
+
+    &::after {
       top: 30px;
 
       background: url("../img/icon-like-desktop.svg") center no-repeat;
@@ -232,6 +239,7 @@
   .photo-list__image {
     width: 400px;
     height: 267px;
+
     &--first {
       width: 1200px;
       height: 400px;

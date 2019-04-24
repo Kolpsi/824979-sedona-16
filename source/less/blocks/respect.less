@@ -32,7 +32,7 @@
 
   .title-form();
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     top: -15px;
@@ -46,16 +46,16 @@
   }
 }
 // активные стили общих впечатлений
-.respect__label:hover:before {
+.respect__label:hover::before {
   background-color: #e5e5e5;
 }
 
-.respect__label:active:before {
+.respect__label:active::before {
   background-color: #d5d5d5;
 }
 
 .respect__checkbox:active:checked + .respect__label {
-  &:after {
+  &::after {
     opacity: 0.3;
   }
 }
@@ -65,7 +65,7 @@
 }
 
 .respect__checkbox:checked + .respect__label {
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     top: 0;

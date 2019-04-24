@@ -25,6 +25,7 @@
 .reason-one__item {
   width: 210px;
   padding-left: 70px;
+
   &--home {
     order: 1;
     padding-bottom: 1px;
@@ -57,7 +58,7 @@
   color: #333333;
 }
 
-.reason-one__item--home:before {
+.reason-one__item--home::before {
   content: "";
   position: absolute;
   top: -7px;
@@ -70,7 +71,7 @@
   background-size: contain;
 }
 
-.reason-one__item--souvenirs:before {
+.reason-one__item--souvenirs::before {
   content: "";
   position: absolute;
   top: 122px;
@@ -83,7 +84,7 @@
   background-size: contain;
 }
 
-.reason-one__item--food:before {
+.reason-one__item--food::before {
   content: "";
   position: absolute;
   top: 235px;
@@ -123,6 +124,7 @@
     padding-top: 165px;
 
     text-align: center;
+
     &--food {
       order: 1;
       width: 155px;
@@ -137,7 +139,7 @@
     }
   }
 
-  .reason-one__item--home:before {
+  .reason-one__item--home::before {
     top: 80px;
     left: 120px;
 
@@ -145,7 +147,7 @@
     height: 72px;
   }
 
-  .reason-one__item--souvenirs:before {
+  .reason-one__item--souvenirs::before {
     top: 80px;
     left: 640px;
 
@@ -153,7 +155,7 @@
     height: 75px;
   }
 
-  .reason-one__item--food:before {
+  .reason-one__item--food::before {
     top: 80px;
     left: 375px;
 
@@ -184,17 +186,17 @@
     }
   }
 
-  .reason-one__item--home:before {
+  .reason-one__item--home::before {
     top: 80px;
     left: 200px;
   }
 
-  .reason-one__item--souvenirs:before {
+  .reason-one__item--souvenirs::before {
     top: 80px;
     left: 1020px;
   }
 
-  .reason-one__item--food:before {
+  .reason-one__item--food::before {
     top: 80px;
     left: 615px;
   }

@@ -4,6 +4,7 @@
 
 .visited__item {
   margin-bottom: 60px;
+
   &:last-child {
     margin-bottom: 40px;
   }
@@ -37,7 +38,8 @@
   position: relative;
 
   padding-left: 99px;
-  &:after {
+
+  &::after {
     content: "";
     position: absolute;
     top: -10px;
@@ -53,23 +55,23 @@
 // активные стили достопримечательностей
 .visited__label:hover,
 .visited__field:hover:checked + .visited__label {
-  &:after {
+  &::after {
     background-color: #e5e5e5;
   }
 }
 
 .visited__label:active {
-  &:after {
+  &::after {
     background-color: #d5d5d5;
   }
 }
 //
-.visited__field:active:checked + .visited__label:after {
+.visited__field:active:checked + .visited__label::after {
   background: url("../img/icon-tick-op.svg") center no-repeat;
   background-color: #d5d5d5;
 }
 
-.visited__field:checked + .visited__label:after {
+.visited__field:checked + .visited__label::after {
   content: "";
   position: absolute;
   top: -10px;
