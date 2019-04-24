@@ -15,16 +15,25 @@
   }
 
   &--other {
+    position: relative;
+
+    width: 280px;
+    margin: 0 auto;
+
     list-style: none;
 
     background-color: #eeeeee;
+    border-bottom: 1px solid #d5d5d5;
+    &:last-child {
+      border: none;
+    }
   }
 }
 
 .reason__title {
   margin: 0 auto;
-  padding-top: 60px;
-  padding-bottom: 15px;
+  padding-top: 75px;
+  padding-bottom: 10px;
 
   font-weight: bold;
   font-size: 18px;
@@ -37,7 +46,19 @@
   }
 
   &--other {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
     color: #000000;
+  }
+
+  &--road {
+    margin-top: 10px;
+  }
+
+  &--tourist {
+    margin-top: 5px;
   }
 }
 
@@ -56,11 +77,30 @@
 }
 
 .reason__number {
-  padding-bottom: 20px;
+  padding-bottom: 12px;
+  &--other {
+    padding-bottom: 13px;
+  }
 }
 
 .reason__text {
-  padding-bottom: 40px;
+  width: 265px;
+  padding-bottom: 43px;
+  &--belial {
+    padding-bottom: 40px;
+  }
+
+  &--road {
+    width: 206px;
+  }
+
+  &--other {
+    padding-bottom: 30px;
+  }
+
+  &--tourist {
+    width: 250px;
+  }
 }
 
 @media (min-width: @tablet-width) {

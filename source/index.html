@@ -9,7 +9,7 @@
   <body>
     <div class="page-wrapper">
       <header class="page-header">
-        <nav class="main-nav main-nav--opened">
+        <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a class="site-list__link site-list__link--active" >Главная</a></li>
@@ -18,9 +18,11 @@
             <li class="site-list__item"><a class="site-list__link" href="#">HTML academy</a></li>
             <li class="site-list__item--order">
               <a class="page-header-logo">
-                <img class="page-header-logo__image page-header-logo__image--mobile" src="img/logo-sedona-mobile.svg" alt="Логотип седона" width="102" height="63">
-                <img class="page-header-logo__image page-header-logo__image--tablet" src="img/logo-sedona-tablet.svg" alt="Логотип седона" width="102" height="63">
-                <img class="page-header-logo__image page-header-logo__image--desktop" src="img/logo-sedona-desktop.svg" alt="Логотип седона" width="188" height="96">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img class="page-header-logo__image" src="img/logo-sedona-mobile.svg" alt="Логотип седона" width="125" height="84">
+                </picture>
               </a>
             </li>
           </ul>
@@ -32,7 +34,7 @@
             <img class="introduction__text" src="img/text-sedona-index.svg" width="281px" height="214px">
           </div>
           <h1 class="introduction__title">седона — небольшой городок в аризоне, заслуживающий большего!</h1>
-          <p class="introduction__paragraph">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <p class="introduction__paragraph introduction__paragraph--index">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </section>
         <section class="reason-one">
           <div class="reason-one__wrapper">
@@ -41,7 +43,11 @@
               <p class="reason__number">&ndash; №1 &ndash;</p>
               <p class="reason__text">седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <div class="reason-one__image"></div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg">
+              <img class="reason-one__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="фото города"></img>
+            </picture>
           </div>
           <div class="reason-one__advantage">
             <ul class="reason-one__list">
@@ -67,8 +73,11 @@
               <p class="reason__number">&ndash; №2 &ndash;</p>
               <p class="reason__text reason__text--belial">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <div class="reason-two__image">
-            </div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
+              <img class="reason-two__image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото моста дьявола"></img>
+            </picture>
           </div>
             <ul class="reason-two__list">
               <li class="reason reason--other">
@@ -76,13 +85,13 @@
                 <p class="reason__number reason__number--other">&ndash; №3 &ndash;</p>
                 <p class="reason__text reason__text--other reason__text--place">все интересные места находятся очень близко</p>
               </li>
-              <li class="reason reason--other">
-                <h2 class="reason__title reason__title--other ">красивая дорога</h2>
+              <li class="reason reason--other reason--four">
+                <h2 class="reason__title reason__title--other reason__title--road">красивая дорога</h2>
                 <p class="reason__number reason__number--other">&ndash; №4 &ndash;</p>
                 <p class="reason__text reason__text--other reason__text--road">ехать в седону из лас-вегаса совсем не скучно!</p>
               </li>
               <li class="reason reason--other">
-                <h2 class="reason__title reason__title--other">мало туристов</h2>
+                <h2 class="reason__title reason__title--other reason__title--tourist">мало туристов</h2>
                 <p class="reason__number reason__number--other">&ndash; №5 &ndash;</p>
                 <p class="reason__text reason__text--other reason__text--tourist">Большинство едет в гранд каньон и толпится там</p>
               </li>
@@ -95,7 +104,11 @@
         </article>
         <article class="map">
           <h2 class="visually-hidden">Карта седоны</h2>
-          <div class="map__img"></div>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
+            <img class="map__img" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="карта седоны">
+          </picture>
         </article>
       </main>
       <footer class="page-footer">
