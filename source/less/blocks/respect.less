@@ -2,6 +2,13 @@
   border: none;
 }
 
+.respect__item {
+  margin-bottom: 45px;
+
+  &:last-child {
+    margin-bottom: 30px;
+  }
+}
 
 .respect__list {
   margin: 0;
@@ -11,12 +18,96 @@
 }
 
 .respect__title {
+  width: 320px;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+
   text-transform: uppercase;
 
-  .title-form;
+  border-top: 1px solid #e6e6e6;
+
+  .title-form();
 }
 
 .respect__label {
+  position: relative;
 
-  .title-form;
+  padding-left: 85px;
+
+  .title-form();
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 9px;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: #f2f2f2;
+    border-radius: 50%;
+  }
+}
+// активные стили общих впечатлений
+.respect__label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.respect__label:active::before {
+  background-color: #d5d5d5;
+}
+
+.respect__checkbox:active:checked + .respect__label {
+  &::after {
+    opacity: 0.3;
+  }
+}
+//
+.respect__checkbox {
+  position: absolute;
+}
+
+.respect__checkbox:checked + .respect__label {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 25px;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: #333333;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .respect {
+    order: -1;
+    width: 273px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .respect__title {
+    padding-right: 25px;
+    padding-bottom: 70px;
+
+    font-size: 21px;
+
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .respect {
+    width: 400px;
+  }
+
+  .respect__title {
+    margin-left: 170px;
+  }
 }

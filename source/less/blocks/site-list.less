@@ -4,17 +4,15 @@
 }
 
 .site-list__item {
-  list-style: none;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 40px;
-  font-family: "PT sans", "Arial", sans-serif;
-  text-align: center;
+  position: relative;
 
-  background-color: #81b3d2;
+  list-style: none;
 
   &--order {
     order: 1;
+    height: 56px;
+
+    text-align: center;
   }
 }
 
@@ -27,10 +25,19 @@
 }
 
 .site-list__link {
+  display: block;
+  padding: 7.5px 0;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  font-family: "PT sans", "Arial", sans-serif;
+  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
 
+  background-color: #81b3d2;
   cursor: pointer;
 }
 
@@ -41,11 +48,89 @@
     width: auto;
   }
 
-  .site-list__item {
+  .site-list__link {
+    padding: 12px 10px;
+    padding-left: 33px;
+
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+
     background-color: #ffffff;
   }
 
+  .site-list__item a[href] {
+    &:hover,
+    &:focus {
+      color: #81b3d2;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .site-list__item {
+    margin-left: 10px;
+
+    &--order {
+      margin-left: 35px;
+    }
+  }
+
+  .main-nav .site-list__link--active {
+    color: #766357;
+
+    &:hover,
+    &:focus {
+      color: #604e43;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    margin-left: 40px;
+
+    &:nth-child(4) {
+      margin-right: 40px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 20px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 20px;
+      margin-left: 85px;
+    }
+
+    &--order {
+      margin-left: 30px;
+    }
+  }
+}
+
+@media (max-width: @mobile-width-only) {
   .site-list__link {
-    color: #000000;
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+    box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+  }
+
+  .site-list a[href] {
+    &:hover,
+    &:focus {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+
+      background-color: #5496bd;
+    }
   }
 }

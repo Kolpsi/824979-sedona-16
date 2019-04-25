@@ -2,10 +2,25 @@
   border: none;
 }
 
+.visited__item {
+  margin-bottom: 55px;
+
+  &:last-child {
+    margin-bottom: 28px;
+  }
+}
+
 .visited__title {
+  width: 320px;
+  padding-top: 18px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+
   text-transform: uppercase;
 
-  .title-form;
+  border-top: 1px solid #e6e6e6;
+
+  .title-form();
 }
 
 .visited__list {
@@ -18,4 +33,108 @@
   line-height: 26px;
   font-family: "PT sans", "Arial", sans-serif;
   color: #000000;
+}
+
+.visited__label {
+  position: relative;
+
+  padding-left: 85px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 5px;
+
+    width: 56px;
+    height: 56px;
+
+    background-color: #f2f2f2;
+    border-radius: 3px;
+  }
+}
+// активные стили достопримечательностей
+.visited__label:hover,
+.visited__field:hover:checked + .visited__label {
+  &::after {
+    background-color: #e5e5e5;
+  }
+}
+
+.visited__label:active {
+  &::after {
+    background-color: #d5d5d5;
+  }
+}
+//
+.visited__field:active:checked + .visited__label::after {
+  background: url("../img/icon-tick-op.svg") center no-repeat;
+  background-color: #d5d5d5;
+}
+
+.visited__field:checked + .visited__label::after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 5px;
+
+  width: 56px;
+  height: 56px;
+
+  background: url("../img/icon-tick.svg") center no-repeat;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+}
+
+@media (min-width: @tablet-width) {
+  .visited {
+    width: 648px;
+
+    border-top: 1px solid #e6e6e6;
+  }
+
+  .visited__title {
+    font-size: 21px;
+
+    border: none;
+  }
+
+  .visited__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 520px;
+    margin: 0 auto;
+  }
+
+  .visited__item {
+    &:nth-child(1) {
+      margin-right: 70px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 90px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .visited {
+    width: 960px;
+  }
+
+  .visited__list {
+    width: 960px;
+  }
+
+  .visited .visited__item {
+    margin-right: 60px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .visited__label {
+    padding-left: 85px;
+  }
 }
