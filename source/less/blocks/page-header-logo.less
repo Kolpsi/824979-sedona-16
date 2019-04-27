@@ -4,6 +4,14 @@
   left: 100px;
 }
 
+@media (max-width: @mobile-width-only) {
+  .page-header-logo {
+    &--closed {
+      top: 0;
+    }
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page-header-logo {
     top: 0;
