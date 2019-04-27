@@ -94,6 +94,9 @@
   }
 
   .visited__title {
+    margin-bottom: 24px;
+    padding-right: 0;
+
     font-size: 21px;
 
     border: none;
@@ -107,13 +110,27 @@
   }
 
   .visited__item {
+    margin-bottom: 62px;
+
     &:nth-child(1) {
-      margin-right: 70px;
+      margin-right: 40px;
     }
 
     &:nth-child(3) {
-      margin-right: 90px;
+      margin-right: 60px;
     }
+  }
+
+  .visited__label {
+    padding-left: 110px;
+
+    &::after {
+      left: 30px;
+    }
+  }
+
+  .visited__field:checked + .visited__label::after {
+    left: 30px;
   }
 }
 

@@ -93,12 +93,37 @@
   }
 
   .respect__title {
+    padding-top: 23px;
     padding-right: 25px;
-    padding-bottom: 70px;
+    padding-bottom: 74px;
 
     font-size: 21px;
+    text-align: left;
 
     border: none;
+  }
+
+  .respect__label {
+    padding-left: 73px;
+
+    &::before {
+      top: -14px;
+      left: 1px;
+
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+  .respect__item {
+    margin-bottom: 52px;
+  }
+
+  .respect__checkbox:checked + .respect__label {
+    &::after {
+      top: 2px;
+      left: 18px;
+    }
   }
 }
 
