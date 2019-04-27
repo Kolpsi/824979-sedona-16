@@ -10,6 +10,12 @@
   url("../img/bg-back-mobile@1x.jpg") center no-repeat;
   background-color: #81b3d2;
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/bg-intro-triangle-mobile.svg") 50% 100.5% no-repeat,
+      url("../img/bg-back-mobile@2x.jpg") center no-repeat;
+      background-size: 768px auto;
+  }
+
   &--photo {
     min-height: 100px;
     margin-bottom: 37px;
@@ -20,9 +26,6 @@
   &--form {
     min-height: 50px;
     margin-bottom: 37px;
-
-    background: url("../img/bg-intro-triangle-mobile.svg") 50% 101% no-repeat,
-    url("../img/bg-back-mobile@1x.jpg") 50% 100% no-repeat;
   }
 }
 
@@ -144,8 +147,14 @@
     width: auto;
     margin-bottom: 55px;
 
-    background: url("../img/bg-intro-triangle-tablet.svg") 50% 101% no-repeat,
+    background: url("../img/bg-intro-triangle-tablet.svg") 50% 100% no-repeat,
     url("../img/bg-back-tablet@1x.jpg") 50% 100% no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/bg-intro-triangle-tablet.svg") 50% 100% no-repeat,
+      url("../img/bg-back-tablet@2x.jpg") center no-repeat;
+      background-size: 768px auto;
+    }
 
     &--photo {
       min-height: 290px;
@@ -155,9 +164,6 @@
     &--form {
       min-height: 290px;
       margin-bottom: 75px;
-
-      background: url("../img/bg-intro-triangle-tablet.svg") 50% 101% no-repeat,
-      url("../img/bg-back-desktop@1x.jpg") 50% 100% no-repeat;
     }
   }
 }
@@ -169,6 +175,12 @@
 
     background: url("../img/bg-intro-triangle-desktop.svg") 50% 100% no-repeat,
     url("../img/bg-back-desktop@1x.jpg") 40% 101% no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/bg-intro-triangle-desktop.svg") 50% 100% no-repeat,
+      url("../img/bg-back-desktop@2x.jpg") center no-repeat;
+      background-size: 1200px auto;
+    }
 
     &--photo {
       height: 300px;
