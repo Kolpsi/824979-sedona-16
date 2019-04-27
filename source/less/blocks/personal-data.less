@@ -63,8 +63,8 @@
 @media (min-width: @tablet-width) {
   .personal-data {
     width: 280px;
-    padding: 0;
     margin-bottom: 50px;
+    padding: 0;
 
     &::before {
       content: "";
@@ -109,10 +109,10 @@
 
 @media (min-width: @desktop-width) {
   .personal-data {
-    width: 405px;
+    width: 450px;
 
     &::before {
-      left: -80px;
+      left: -30px;
     }
   }
 
@@ -122,5 +122,16 @@
     &:nth-of-type(1) {
       width: 350px;
     }
+  }
+
+  .personal-data__title {
+    margin-bottom: 45px;
+    margin-left: 35px;
+  }
+
+  .personal-data__label {
+    margin: 0;
+    margin-right: 10px;
+    margin-left: 49px;
   }
 }

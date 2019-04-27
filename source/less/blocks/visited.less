@@ -139,19 +139,35 @@
     width: 960px;
   }
 
+  .visited__title {
+    padding-right: 25px;
+  }
+
   .visited__list {
     width: 960px;
   }
 
   .visited .visited__item {
-    margin-right: 60px;
+    margin-right: 83px;
 
     &:last-child {
       margin-right: 0;
     }
+
+    &:nth-child(2) {
+      margin-right: 85px;
+    }
   }
 
   .visited__label {
-    padding-left: 85px;
+    padding-left: 65px;
+
+    &::after {
+      left: -15px;
+    }
+  }
+
+  .visited__field:checked + .visited__label::after {
+    left: -15px;
   }
 }
