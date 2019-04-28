@@ -36,6 +36,90 @@
   background: url("../img/video-mobile@1x.jpg") center no-repeat;
 }
 
+.question__control {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.question__control-wrapper {
+  position: absolute;
+  top: -110px;
+  width: 280px;
+  min-height: 66px;
+  background-color: #f2f2f2;
+}
+
+.question__replay {
+  padding: 22px 24px;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.question__subtitles {
+  margin-left: 105px;
+  margin-right: 25px;
+  padding: 22px 0;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.question__full {
+  padding: 22px 0;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.question__control-scale {
+  position: relative;
+  position: absolute;
+  top: -155px;
+  width: 280px;
+  height: 45px;
+  background: #000000;
+  opacity: 0.6;
+
+  &:after {
+    content: "";
+    top: 22px;
+    left: 22px;
+    position: absolute;
+    width: 235px;
+    height: 3px;
+    background-color: white;
+    opacity: 0.3;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    top: 19px;
+    left: 57px;
+    width: 11px;
+    height: 10px;
+    background-color: white;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .question {
     width: auto;
