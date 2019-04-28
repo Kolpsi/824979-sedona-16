@@ -34,6 +34,11 @@
   margin-bottom: 110px;
 
   background: url("../img/video-mobile@1x.jpg") center no-repeat;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../img/video-mobile@2x.jpg") center no-repeat;
+    background-size: 320px auto;
+  }
 }
 
 .question__control {
@@ -151,6 +156,11 @@
     margin-bottom: 40px;
 
     background: url("../img/video-tablet@1x.jpg") center no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/video-tablet@2x.jpg") center no-repeat;
+      background-size: 648px auto;
+    }
   }
 
   .question__control-wrapper {
@@ -239,6 +249,11 @@
 
     background: url("../img/video-desktop@1x.jpg") center no-repeat;
     background-size: cover;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/video-desktop@2x.jpg") center no-repeat;
+      background-size: 800px auto;
+    }
   }
 
   .question__control {
