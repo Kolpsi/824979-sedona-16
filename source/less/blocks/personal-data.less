@@ -63,13 +63,14 @@
 @media (min-width: @tablet-width) {
   .personal-data {
     width: 280px;
+    margin-bottom: 45px;
     padding: 0;
 
     &::before {
       content: "";
       position: absolute;
       top: 20px;
-      left: -30px;
+      left: -43px;
 
       width: 1px;
       height: 292px;
@@ -80,7 +81,9 @@
 
   .personal-data__title {
     width: 0;
-    margin-bottom: 25px;
+    margin-bottom: 42px;
+    padding-top: 23px;
+    padding-left: 15px;
 
     font-size: 21px;
     text-align: left;
@@ -89,6 +92,9 @@
   }
 
   .personal-data__label {
+    margin-right: 9px;
+    margin-left: 14px;
+
     text-align: left;
   }
 
@@ -103,10 +109,10 @@
 
 @media (min-width: @desktop-width) {
   .personal-data {
-    width: 405px;
+    width: 450px;
 
     &::before {
-      left: -80px;
+      left: -30px;
     }
   }
 
@@ -116,5 +122,16 @@
     &:nth-of-type(1) {
       width: 350px;
     }
+  }
+
+  .personal-data__title {
+    margin-bottom: 45px;
+    margin-left: 35px;
+  }
+
+  .personal-data__label {
+    margin: 0;
+    margin-right: 10px;
+    margin-left: 49px;
   }
 }

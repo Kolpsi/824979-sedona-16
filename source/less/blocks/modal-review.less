@@ -1,0 +1,93 @@
+.modal-review {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 30;
+
+  display: none;
+  width: 320px;
+  min-height: 280px;
+
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  transform: translate(-50%, -50%);
+}
+
+.modal-review__title {
+  margin: 40px auto;
+
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-review__text {
+  width: 230px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+
+  font-size: 14px;
+  text-align: center;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.modal-review__button {
+  width: 180px;
+  margin-left: 70px;
+
+  text-align: center;
+
+  &--good {
+    width: 280px;
+    margin: 20px;
+  }
+}
+
+.modal-review__wrapper {
+  width: 100%;
+
+  background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-review {
+    width: 640px;
+
+    &--bad {
+      width: 400px;
+    }
+  }
+
+  .modal-review__title {
+    margin-top: 60px;
+
+    font-size: 30px;
+
+    &--bad {
+      width: 277px;
+
+      line-height: 40px;
+    }
+  }
+
+  .modal-review__text {
+    width: 470px;
+    margin-bottom: 40px;
+
+    &--bad {
+      width: 320px;
+    }
+  }
+
+  .modal-review__button {
+    width: 272px;
+    margin-bottom: 49px;
+
+    &--good {
+      width: 458px;
+      margin: 44px 91px;
+    }
+  }
+}

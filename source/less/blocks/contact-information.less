@@ -13,7 +13,7 @@
 
 .contact-information input {
   box-sizing: border-box;
-  width: 280px;
+  width: 228px;
   margin-top: 8px;
   margin-bottom: 9px;
   padding: 22px 0 20px 22px;
@@ -41,7 +41,7 @@
   &--tel::before {
     content: "";
     position: absolute;
-    top: 96px;
+    top: 95px;
     right: 47px;
 
     width: 57px;
@@ -92,28 +92,35 @@
   .contact-information {
     width: 648px;
     margin: 0 auto;
+    margin-bottom: 18px;
     padding: 0;
 
     border-top: 1px solid #e6e6e6;
   }
 
   .contact-information input {
-    width: 640px;
+    width: 590px;
+    margin-bottom: 20px;
   }
 
   .contact-information__label {
     &--tel::before {
-      top: 112px;
-      right: 9px;
+      top: 86px;
+      right: 1px;
     }
 
     &--mail::after {
-      top: 233px;
-      right: 9px;
+      top: 200px;
+      right: 1px;
     }
   }
 
   .contact-information__title {
+    margin-bottom: 26px;
+    padding: 0 10px;
+
+    font-size: 21px;
+
     border: none;
   }
 }
@@ -121,28 +128,33 @@
 @media (min-width: @desktop-width) {
   .contact-information {
     width: 960px;
+    margin-bottom: 15px;
+  }
+
+  .contact-information__title {
+    margin-bottom: 63px;
   }
 
   .contact-information input {
-    width: 257px;
-    margin-left: 15px;
+    width: 260px;
+    margin-left: 10px;
   }
 
   .contact-information__label {
     padding-left: 0;
 
     &--mail {
-      margin-left: 130px;
+      margin-left: 135px;
 
       &::after {
-        top: 86px;
-        right: 0;
+        top: 97px;
+        right: 1px;
       }
     }
 
     &--tel::before {
-      top: 86px;
-      left: 320px;
+      top: 97px;
+      left: 343px;
     }
   }
 
