@@ -1,20 +1,29 @@
-.map-frame {
+.map {
   width: 320px;
-  height: 350px;
+}
+
+.map-frame {
   position: relative;
   z-index: 2;
-  border: none
+
+  width: 320px;
+  height: 350px;
+
+  border: none;
 }
 .map__img {
   position: absolute;
-  top: 0;
+  top: 3023px;
   left: 0;
+  z-index: 1;;
+
   margin: 0;
-  z-index: 1
 }
 
 @media (min-width: @tablet-width) {
   .map__img {
+    top: 2191px;
+
     width: 768px;
   }
 
@@ -25,6 +34,8 @@
 
 @media (min-width: @desktop-width) {
   .map__img {
+    top: 2208px;
+
     width: 1200px;
   }
 
