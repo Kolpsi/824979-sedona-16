@@ -41,12 +41,6 @@
   cursor: pointer;
 }
 
-@media (max-width: @mobile-width-only) {
-  .main-nav--closed .site-list {
-    display: none;
-  }
-}
-
 @media (min-width: @tablet-width) {
   .site-list {
     display: flex;
@@ -55,8 +49,8 @@
   }
 
   .site-list__link {
+    box-sizing: border-box;
     width: 153px;
-    margin-left: 20px;
     padding: 15px 10px;
 
     font-size: 14px;
@@ -99,19 +93,6 @@
 
     &:nth-child(3) {
       margin-right: 25px;
-    }
-  }
-
-  .main-nav .site-list__link--active {
-    color: #766357;
-
-    &:hover,
-    &:focus {
-      color: #604e43;
-    }
-
-    &:active {
-      opacity: 0.3;
     }
   }
 }

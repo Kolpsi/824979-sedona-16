@@ -25,9 +25,10 @@
     background-color: #e5e5e5;
   }
   // активные стили контактной информации
-  &:active {
+  &:focus {
     background-color: #ffffff;
     border: 4px solid #e5e5e5;
+    outline: none;
   }
   //
 }
@@ -107,12 +108,14 @@
     &--tel::before {
       top: 86px;
       right: 1px;
+
       background-color: #e6e6e6;
     }
 
     &--mail::after {
       top: 200px;
       right: 1px;
+
       background-color: #e6e6e6;
     }
   }
