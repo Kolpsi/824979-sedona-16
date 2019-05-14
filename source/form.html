@@ -57,7 +57,9 @@
               <input class="personal-data__field" type="text" name="name" id="patronymic" placeholder="Александрович">
             </fieldset>
             <fieldset class="contact-information">
-              <legend class="contact-information__title">Контактная информация:</legend>
+              <legend class="contact-information__legend">
+                <span class="contact-information__title">Контактная информация:</span>
+              </legend>
               <label class="contact-information__label contact-information__label--tel" for="tel"><span class="contact-information__hidden">Контактный</span> телефон*:</label>
               <input class="contact-information__field" type="tel" name="tel" id="tel" placeholder="Введите телефон" pattern="[0-9]{11}" required>
               <label class="contact-information__label contact-information__label--mail" for="email">Электронная почта*:</label>
@@ -81,7 +83,9 @@
               </ul>
             </fieldset>
             <fieldset class="visited">
-              <legend class="visited__title">посещенные достопримечательности:</legend>
+              <legend class="visited__legend">
+                <span class="visited__title">посещенные достопримечательности:</span>
+              </legend>
               <ul class="visited__list">
                 <li class="visited__item">
                   <input class="visited__field visually-hidden" type="checkbox" name="bridge" id="devil-bridge" checked>
@@ -102,7 +106,9 @@
               </ul>
             </fieldset>
             <fieldset class="emotions">
-              <legend class="emotions__title">Опишите свои эмоции:</legend>
+              <legend class="emotions__legend">
+                <span class="emotions__title">Опишите свои эмоции:</span>
+              </legend>
               <textarea class="emotions__feedback">Опишите подробно все свои восторги </textarea>
               <button class="form__button button" type="submit" name="form__button">отправить отзыв</button>
               <p class="emotions__required">* &ndash; обязательные поля</p>

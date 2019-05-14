@@ -6,6 +6,19 @@
   border: none;
 }
 
+.contact-information__legend {
+  position: absolute;
+  top: 18px;
+  left: 0;
+
+  width: 100%;
+
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+}
+
 .contact-information__hidden {
   margin: 0;
   padding: 0;
@@ -97,7 +110,16 @@
     margin-bottom: 18px;
     padding: 0;
 
+    border: 0;
     border-top: 1px solid #e6e6e6;
+  }
+
+  .contact-information__legend {
+    position: static;
+
+    width: 100%;
+
+    font-size: 21px;
   }
 
   .contact-information input {
@@ -122,12 +144,36 @@
   }
 
   .contact-information__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     margin-bottom: 26px;
     padding: 0 10px;
 
     font-size: 21px;
+    text-align: center;
 
     border: none;
+
+    &::before,
+    &::after {
+      content: "";
+
+      flex-shrink: 0;
+      width: 19%;
+      height: 1px;
+
+      background-color: #dbdbdb;
+    }
+
+    &::before {
+      margin-right: 60px;
+    }
+
+    &::after {
+      margin-left: 60px;
+    }
   }
 }
 
@@ -139,6 +185,11 @@
 
   .contact-information__title {
     margin-bottom: 63px;
+
+    &::before,
+    &::after {
+      width: 29%;
+    }
   }
 
   .contact-information input {

@@ -1,8 +1,23 @@
 .emotions {
+  position: relative;
+
   margin: 0;
   padding: 0;
 
   border: none;
+}
+
+.emotions__legend {
+  position: absolute;
+  top: 18px;
+  left: 0;
+
+  width: 100%;
+
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
 }
 
 .emotions__title {
@@ -55,14 +70,45 @@
     border-top: 1px solid #e6e6e6;
   }
 
+  .emotions__legend {
+    position: static;
+
+    width: 100%;
+  }
+
   .emotions__title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     margin-bottom: 45px;
     padding-top: 10px;
     padding-right: 20px;
 
     font-size: 21px;
+    text-align: center;
 
     border: none;
+
+    &::before,
+    &::after {
+      content: "";
+
+      flex-shrink: 0;
+      width: 19%;
+      height: 1px;
+
+      background-color: #dbdbdb;
+    }
+
+    &::before {
+      margin-right: 60px;
+    }
+
+    &::after {
+      margin-left: 60px;
+    }
+
+
   }
 
   .emotions__feedback {
@@ -91,6 +137,10 @@
     width: 960px;
   }
 
+  .emotions__legend {
+    width: 100%;
+  }
+
   .emotions__feedback {
     width: 960px;
     margin-bottom: 50px;
@@ -102,5 +152,10 @@
 
   .emotions__title {
     padding-left: 20px;
+
+    &::before,
+    &::after {
+      width: 29%;
+    }
   }
 }
