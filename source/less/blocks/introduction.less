@@ -37,7 +37,7 @@
   &--photo {
     width: 229px;
     height: 39px;
-    padding: 50px 40px;
+    padding: 50px 45px;
     padding-bottom: 65px;
   }
 
@@ -96,7 +96,7 @@
 @media (min-width: @tablet-width) {
   .introduction__title {
     width: 500px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 
     font-size: 21px;
 
@@ -115,7 +115,7 @@
 
     &--index {
       width: 490px;
-      margin-bottom: 45px;
+      margin-bottom: 50px;
     }
 
     &--form {
@@ -125,6 +125,7 @@
     &--photo {
       font-size: 14px;
       line-height: 24px;
+      margin-bottom: 70px;
     }
   }
 
@@ -151,20 +152,30 @@
 
   .introduction__image {
     width: auto;
-    margin-bottom: 55px;
+    height: 520px;
+    margin-bottom: 49px;
 
     background: url("../img/bg-intro-triangle-tablet.svg") 50% 100% no-repeat,
     url("../img/bg-back-tablet@1x.jpg") 50% 100% no-repeat;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background: url("../img/bg-intro-triangle-tablet.svg") 50% 100% no-repeat,
+      background: url("../img/bg-intro-triangle-tablet.svg") 50% 99.8% no-repeat,
       url("../img/bg-back-tablet@2x.jpg") center no-repeat;
       background-size: 768px auto;
     }
 
     &--photo {
-      min-height: 290px;
+      height: 290px;
       margin-bottom: 75px;
+
+      background: url("../img/bg-intro-triangle-tablet.svg") 50% 100% no-repeat,
+      url("../img/bg-back-tablet@1x.jpg") 50% 100% no-repeat;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background: url("../img/bg-intro-triangle-tablet.svg") 50% 99.8% no-repeat,
+        url("../img/bg-back-tablet@2x.jpg") 50% 100% no-repeat;
+        background-size: 768px auto;
+      }
     }
 
     &--form {
@@ -177,21 +188,28 @@
 @media (min-width: @desktop-width) {
   .introduction__image {
     width: auto;
+    min-height: 513px;
     margin-bottom: 50px;
 
-    background: url("../img/bg-intro-triangle-desktop.svg") 50% 101% no-repeat,
+    background: url("../img/bg-intro-triangle-desktop.svg") 50% 100% no-repeat,
     url("../img/bg-back-desktop@1x.jpg") 40% 101% no-repeat;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background: url("../img/bg-intro-triangle-desktop.svg") 50% 101% no-repeat,
+      background: url("../img/bg-intro-triangle-desktop.svg") 50% 100% no-repeat,
       url("../img/bg-back-desktop@2x.jpg") center no-repeat;
       background-size: 1200px auto;
     }
 
     &--photo {
-      height: 300px;
+      min-height: 300px;
       margin-bottom: 110px;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/bg-intro-triangle-desktop.svg") 50% 100% no-repeat,
+      url("../img/bg-back-desktop@2x.jpg") 50% 100% no-repeat;
+      background-size: 1200px auto;
     }
+  }
 
     &--form {
       min-height: 300px;
@@ -200,6 +218,7 @@
   }
 
   .introduction__text {
+    padding-top: 79px;
     padding-left: 370px;
 
     &--photo {
@@ -217,12 +236,12 @@
     width: 490px;
 
     &--index {
-      margin-bottom: 53px;
+      margin-bottom: 49px;
     }
 
     &--photo {
       width: 430px;
-      margin-bottom: 67px;
+      margin-bottom: 70px;
     }
 
     &--form {

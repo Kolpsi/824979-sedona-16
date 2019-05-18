@@ -135,11 +135,12 @@
 @media (min-width: @tablet-width) {
   .question {
     width: auto;
-    margin-bottom: 4px;
+    margin-bottom: 0;
   }
 
   .question__title {
-    margin-top: 70px;
+    margin-top: 65px;
+    margin-bottom: 33px;
 
     font-size: 30px;
   }
@@ -241,6 +242,9 @@
 }
 
 @media (min-width: @desktop-width) {
+  .question {
+    margin-bottom: 3px;
+  }
   .question__video {
     width: 800px;
     margin: 0 auto;
@@ -283,5 +287,13 @@
 
   .question__subtitles {
     margin-left: 595px;
+  }
+
+  .question__title {
+    margin-top: 71px;
+  }
+
+  .question__text {
+    margin-bottom: 36px;
   }
 }

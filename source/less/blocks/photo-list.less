@@ -9,12 +9,25 @@
 }
 
 .photo-list__item {
-  padding-top: 22px;
+  padding-top: 25px;
 
   border-top: 1px solid #d3d3d3;
 
+  &:nth-child(2) {
+    padding-top: 22px;
+  }
+
+  &:nth-child(3) {
+    padding-top: 24px;
+  }
+
   &:nth-child(4) {
     border-bottom: 1px solid #d3d3d3;
+    padding-top: 20px;
+  }
+
+  &--first {
+    padding-top: 23px;
   }
 }
 
@@ -52,7 +65,7 @@
 .photo-list__like {
   position: relative;
 
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   padding-left: 37px;
 
   font-weight: bold;
@@ -93,7 +106,7 @@
   }
 
   .photo-list__link {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
   }
 
   .photo-list__item {
@@ -110,6 +123,14 @@
       padding: 0;
 
       border: none;
+    }
+
+    &:nth-child(3) {
+      padding-top: 17px;
+    }
+
+    &:nth-child(2) {
+      padding-top: 17px;
     }
 
     &:nth-child(1) {
@@ -150,7 +171,7 @@
     margin-bottom: 25px;
 
     &::after {
-      top: 0;
+      top: -2px;
       left: 5px;
     }
   }
@@ -192,7 +213,8 @@
 
   .photo-list__item--first .photo-list__like {
     &::after {
-      top: 25px;
+      top: 28px;
+      left: 9px;
     }
   }
 
@@ -223,8 +245,8 @@
   }
 
   .photo-list__wrapper {
-    padding-top: 10px;
-    padding-bottom: 9px;
+    padding-top: 13px;
+    padding-bottom: 13px;
   }
 
   .photo-list__title {
@@ -242,7 +264,7 @@
     color: #ffffff;
 
     &::after {
-      top: 10px;
+      top: 13px;
 
       background: url("../img/icon-like-desktop.svg") center no-repeat;
       opacity: 1;
@@ -250,13 +272,21 @@
 
     &-other {
       margin-right: 23px;
-      padding-bottom: 20px;
+      padding-bottom: 14px;
     }
   }
 
   .photo-list__item {
     width: 400px;
     padding: 0;
+
+    &:nth-child(2) {
+      padding: 0;
+    }
+
+    &:nth-child(3) {
+      padding: 0;
+    }
   }
 
   .photo-list__link {
