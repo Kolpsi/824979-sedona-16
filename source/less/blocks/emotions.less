@@ -8,11 +8,10 @@
 }
 
 .emotions__legend {
-  position: absolute;
-  top: 18px;
-  left: 0;
-
   width: 100%;
+  position: absolute;
+  top: 3px;
+  left: 0;
 
   font-weight: 700;
   font-size: 18px;
@@ -36,9 +35,10 @@
   box-sizing: border-box;
   width: 279px;
   min-height: 160px;
-  margin-bottom: 45px;
+  margin-bottom: 48px;
   margin-left: 20px;
-  padding: 20px 20px;
+  margin-top: 45px;
+  padding: 12px 18px;
 
   font-weight: bold;
   font-size: 18px;
@@ -68,6 +68,9 @@
 @media (min-width: @tablet-width) {
   .emotions__legend {
     position: static;
+    position: absolute;
+    top: 18px;
+    left: 0;
 
     width: 100%;
   }
@@ -76,10 +79,8 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 45px;
-    padding-top: 10px;
     padding-right: 20px;
-
+    padding-top: 2px;
     font-size: 21px;
     text-align: center;
 
@@ -88,7 +89,7 @@
     &::before,
     &::after {
       content: "";
-
+      margin-top: 14px;
       flex-shrink: 0;
       width: 19%;
       height: 1px;
@@ -108,8 +109,9 @@
   .emotions__feedback {
     width: 648px;
     margin: 0;
+    margin-top: 105px;
     margin-bottom: 53px;
-    padding-top: 15px;
+    padding-top: 10px;
   }
 
   .emotions__required {
@@ -117,7 +119,7 @@
     box-sizing: border-box;
     width: 180px;
     margin: 0;
-    margin-left: 140px;
+    margin-left: 137px;
     padding: 0;
 
     font-size: 14px;
